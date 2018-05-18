@@ -1,0 +1,12 @@
+{
+    "name": "werimo/learningPHP",
+    "authors": [
+        {
+            "name": "Adrian Werimo",
+            "email": "w.adrian@carreltech.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "3.6.4"
+    }
+}
