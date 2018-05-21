@@ -10,31 +10,14 @@ $f3 = Base::instance();
 $f3->config('config.ini');
 $f3->config('routes.ini');
 
-class AppController {
-    function beforeroute(){
-        echo 'Before routing.- ';
-    }
-    function afterroute(){
-        echo ' -.After routing';
-    }
-}
-
-class Main extends AppController {
-    function render($f3){
-        $f3->set('name','Hello World');
-        $template=new Template;
-        echo $template->render('template.html');    
-    }
-    function sayhello(){
-        echo 'Hello Babe!';
-    }
-}
-
-class AboutPage extends AppController {
+//removed functionality
+/*class AboutPage extends AppController {
     function render(){
         echo 'This is the About Page';
     }
 }
+*/
+
 /*$f3->set('message','Hello.World!!!');
 
 $f3->route('GET /',
