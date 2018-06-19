@@ -6,10 +6,13 @@ class Controller {
     protected $db;
     
     function beforeroute(){
-        echo 'Before routing.- ';
+     if($this->f3->get('SESSION.user') === null){
+         $this->f3->reroute("/login");
+         exit;
+     };
     }
     function afterroute(){
-        echo ' -.After routing';
+    //    echo ' -.After routing';
     }
     
     function __construct(){

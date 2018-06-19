@@ -10,6 +10,8 @@ $f3 = Base::instance();
 $f3->config('config.ini');
 $f3->config('routes.ini');
 
+new Session();
+
 //removed functionality
 /*class AboutPage extends AppController {
     function render(){
